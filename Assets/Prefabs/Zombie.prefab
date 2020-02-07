@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7422883988559627791}
   - component: {fileID: 1515448549682242460}
   - component: {fileID: 1381995630394027170}
+  - component: {fileID: 742819823}
+  - component: {fileID: 742819824}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: zombie
@@ -70,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 309570095
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8098180769492495132, guid: 2e81807d5e1f4e54b9db40f01fd576bb,
     type: 3}
@@ -150,3 +152,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &742819823
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422883988559627788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.043669224, y: -0.13093948}
+  serializedVersion: 2
+  m_Radius: 1.9057467
+--- !u!114 &742819824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422883988559627788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8868106e6c557547b0d66171ebd59e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftOffset: {x: -1.75, y: 0, z: 0}
+  rightOffset: {x: 1.73, y: 0, z: 0}
+  speed: 2

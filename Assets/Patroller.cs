@@ -77,14 +77,14 @@ public class Patroller : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
+        if (other.gameObject.tag == "player") {
             state = State.CHASE_PLAYER;
             targetChase = other.transform;
         }
     }
     
     void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
+        if (other.gameObject.tag == "player") {
             state = State.PATROLLE;
         }
     }

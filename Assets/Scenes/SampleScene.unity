@@ -126,6 +126,68 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 828293991909228400}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &239639495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239639494}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.66}
+    newSize: {x: 0.6, y: 0.66}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!4 &239639500 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 828293992006182073, guid: ce764e8ecb9f8524198609ea766fb2e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 828293991909228400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &242220340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 242220341}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &242220341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242220340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.041, y: 0.242, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 239639500}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +547,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 242220341, guid: ce764e8ecb9f8524198609ea766fb2e6, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.472
@@ -493,5 +556,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.022
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 828293992006182075, guid: ce764e8ecb9f8524198609ea766fb2e6,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 5746857717322583823, guid: 2b40115371ef7b645970bc62abdaf0ac,
+        type: 3}
+    - target: {fileID: 828293992006182075, guid: ce764e8ecb9f8524198609ea766fb2e6,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 242220341}
+>>>>>>> master
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce764e8ecb9f8524198609ea766fb2e6, type: 3}

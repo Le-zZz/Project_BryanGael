@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+<<<<<<< HEAD
     private void Start()
     {
         Destroy(gameObject,1f);
@@ -13,6 +14,11 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+=======
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject,1f);
+>>>>>>> master
     }
 
 }

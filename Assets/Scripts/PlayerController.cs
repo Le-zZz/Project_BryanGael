@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private float fireRate;
     private float nextFire;
 
+    private bool canShoot = false;
+
     private void Start()
     {
         fireRate = 0.5f;
@@ -34,7 +36,10 @@ public class PlayerController : MonoBehaviour
             if (isMoving)
             {
                 Move();
-                Shoot();
+                if (canShoot)
+                {
+                    Shoot();
+                }
             }
         }
     }
@@ -66,6 +71,21 @@ public class PlayerController : MonoBehaviour
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
             nextFire = Time.time + fireRate;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer ("zombie"))
+        {
+            canShoot = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer ("zombie"))
+        {
+            canShoot = false;
         }
     }
 }

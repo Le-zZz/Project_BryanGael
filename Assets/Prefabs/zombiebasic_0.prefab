@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3243769310320986762}
   - component: {fileID: 3243769310320986763}
   - component: {fileID: 3243769310320986760}
-  - component: {fileID: 3243769310320986761}
   - component: {fileID: 3243769310320986806}
   - component: {fileID: 3243769310320986807}
   - component: {fileID: 1401200030}
+  - component: {fileID: 1401200032}
   m_Layer: 0
   m_Name: zombiebasic_0
   m_TagString: zombie
@@ -105,21 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3243769310320986761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3243769310320986804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8868106e6c557547b0d66171ebd59e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftOffset: {x: -1.56, y: 0, z: 0}
-  rightOffset: {x: 1.59, y: 0, z: 0}
-  speed: 2
 --- !u!50 &3243769310320986806
 Rigidbody2D:
   serializedVersion: 4
@@ -183,3 +168,18 @@ CircleCollider2D:
   m_Offset: {x: 0.023268342, y: -0.038977504}
   serializedVersion: 2
   m_Radius: 1.8484932
+--- !u!114 &1401200032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243769310320986804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8868106e6c557547b0d66171ebd59e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftOffset: {x: 1.47, y: 0, z: 0}
+  rightOffset: {x: -1.38, y: 0, z: 0}
+  speed: 2

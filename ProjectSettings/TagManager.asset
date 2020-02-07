@@ -51,3 +51,9 @@ TagManager:
   - name: wall
     uniqueID: 415531453
     locked: 0
+  - name: player
+    uniqueID: 2562642079
+    locked: 0
+  - name: zombie
+    uniqueID: 4220216853
+    locked: 0

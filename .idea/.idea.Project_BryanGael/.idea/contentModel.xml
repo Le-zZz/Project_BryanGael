@@ -6,12 +6,14 @@
     <e p="D:\Unity\Project_BryanGael" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="EnemyFollow.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Bullet.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="EnemyDmg.cs" t="Include" />
+          <e p="EnemyFollow.cs" t="Include" />
           <e p="Patroller.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="PlayerDmg.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

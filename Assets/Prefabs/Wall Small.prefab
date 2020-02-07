@@ -10,17 +10,17 @@ PrefabInstance:
     - target: {fileID: 5038941596385041388, guid: 902066625dea85c438cb3ccfe0b45807,
         type: 3}
       propertyPath: m_Name
-      value: Wall
+      value: Wall Small
       objectReference: {fileID: 0}
     - target: {fileID: 5038941596385041390, guid: 902066625dea85c438cb3ccfe0b45807,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.246
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5038941596385041390, guid: 902066625dea85c438cb3ccfe0b45807,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5038941596385041390, guid: 902066625dea85c438cb3ccfe0b45807,
         type: 3}

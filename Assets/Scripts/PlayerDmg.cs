@@ -21,9 +21,9 @@ public class PlayerDmg : MonoBehaviour
         if (health == 0)
         {
             heart4.SetActive(false);
-            Destroy(gameObject);
             panelLose.SetActive(true);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            //Destroy(gameObject);
         }
     }
 

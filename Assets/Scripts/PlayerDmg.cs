@@ -11,7 +11,7 @@ public class PlayerDmg : MonoBehaviour
     [SerializeField] private GameObject heart2;
     [SerializeField] private GameObject heart3;
     [SerializeField] private GameObject heart4;
-    
+    [SerializeField] private GameObject panelLose;
 
     void Update()
     {
@@ -22,6 +22,8 @@ public class PlayerDmg : MonoBehaviour
         {
             heart4.SetActive(false);
             Destroy(gameObject);
+            panelLose.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

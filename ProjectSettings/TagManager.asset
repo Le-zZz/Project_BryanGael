@@ -9,6 +9,8 @@ TagManager:
   - player
   - playerDmg
   - key
+  - checkWin
+  - opendoor
   layers:
   - Default
   - TransparentFX
@@ -60,4 +62,10 @@ TagManager:
     locked: 0
   - name: zombie
     uniqueID: 4220216853
+    locked: 0
+  - name: key
+    uniqueID: 1241055573
+    locked: 0
+  - name: opendoor
+    uniqueID: 1951602337
     locked: 0

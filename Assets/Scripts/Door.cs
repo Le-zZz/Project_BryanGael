@@ -25,15 +25,17 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (getKey)
+            {
+            key.SetActive(false);
+            keyUI.SetActive(true);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "checkwin")
         {
-            key.SetActive(false);
-            keyUI.SetActive(true);
             getKey = true;
         }
     }

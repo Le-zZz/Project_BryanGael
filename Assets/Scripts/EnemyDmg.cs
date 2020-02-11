@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class EnemyDmg : MonoBehaviour
 {
-    private int health = 3;
+    private int health = 1;
 
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
         }

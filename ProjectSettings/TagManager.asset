@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - player
   - playerDmg
+  - key
   layers:
   - Default
   - TransparentFX
@@ -50,6 +51,9 @@ TagManager:
     locked: 0
   - name: wall
     uniqueID: 415531453
+    locked: 0
+  - name: door
+    uniqueID: 3166041309
     locked: 0
   - name: player
     uniqueID: 2562642079

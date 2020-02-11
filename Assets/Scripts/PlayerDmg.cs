@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerDmg : MonoBehaviour
 {
-    private int health = 4;
+    [SerializeField] int health = 4;
 
     [SerializeField] private GameObject heart1;
     [SerializeField] private GameObject heart2;
@@ -36,7 +36,7 @@ public class PlayerDmg : MonoBehaviour
 
     void HealthStatus()
     {
-        if (health == 4)
+        if (health >= 4)
         {
             heart1.SetActive(true);
             heart2.SetActive(false);

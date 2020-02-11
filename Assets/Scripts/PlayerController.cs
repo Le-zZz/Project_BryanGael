@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     private float bulletForce = 15f;
-
+    
     private float fireRate;
     private float nextFire;
 
@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Time.time > nextFire)
         {
+
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);

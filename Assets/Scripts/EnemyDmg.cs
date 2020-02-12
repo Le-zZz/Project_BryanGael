@@ -6,6 +6,8 @@ using UnityEngine;
 public class EnemyDmg : MonoBehaviour
 {
     private int health = 1;
+    
+    [SerializeField] private AudioSource deathSound;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +22,7 @@ public class EnemyDmg : MonoBehaviour
     {
         if (other.gameObject.tag == "bullet")
         {
+            deathSound.Play();
             health -= 1;
             Debug.Log(health);
         }

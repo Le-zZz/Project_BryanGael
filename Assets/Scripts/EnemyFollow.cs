@@ -23,6 +23,7 @@ public class EnemyFollow : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(Vector3.forward, target.position);
             transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

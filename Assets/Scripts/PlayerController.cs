@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     private float nextFire;
 
     private bool canShoot = false;
+    
+    public AudioSource bulletSound;
 
     private void Start()
     {
@@ -41,6 +43,11 @@ public class PlayerController : MonoBehaviour
                     Shoot();
                 }
             }
+        }
+
+        if (PlayerDmg.health <= 0)
+        {
+            Destroy(this);
         }
     }
 
@@ -67,7 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Time.time > nextFire)
         {
-
+            bulletSound.Play();
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);

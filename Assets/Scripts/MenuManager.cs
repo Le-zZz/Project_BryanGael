@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+
+    [SerializeField] private GameObject panelStart;
     // Start is called before the first frame update
     void Start() {
-        
+        panelStart.SetActive(true);
+        PlayerDmg.health = PlayerDmg.maxHealth;
     }
 
     // Update is called once per frame
@@ -24,5 +27,11 @@ public class MenuManager : MonoBehaviour
 
     public void Quit() {
         Application.Quit();
+    }
+
+    public void Play()
+    {
+        panelStart.SetActive(false);
+        
     }
 }

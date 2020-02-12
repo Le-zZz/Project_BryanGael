@@ -5,13 +5,22 @@ using UnityEngine;
 
 public class PlayerDmg : MonoBehaviour
 {
-    [SerializeField] int health = 4;
+    private Rigidbody2D body;
+    public static int health;
+    public static int maxHealth = 4;
 
     [SerializeField] private GameObject heart1;
     [SerializeField] private GameObject heart2;
     [SerializeField] private GameObject heart3;
     [SerializeField] private GameObject heart4;
     [SerializeField] private GameObject panelLose;
+
+    private void Start()
+    {
+        body = GetComponent<Rigidbody2D>();
+        health = maxHealth;
+        Time.timeScale = 1;
+    }
 
     void Update()
     {
@@ -22,8 +31,8 @@ public class PlayerDmg : MonoBehaviour
         {
             heart4.SetActive(false);
             panelLose.SetActive(true);
-            //Time.timeScale = 0;
-            //Destroy(gameObject);
+            Time.timeScale = 0;
+            //body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
     }
 

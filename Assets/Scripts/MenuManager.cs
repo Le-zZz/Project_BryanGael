@@ -7,9 +7,11 @@ public class MenuManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject panelStart;
+
     // Start is called before the first frame update
-    void Start() {
-        panelStart.SetActive(true);
+    void Start()
+    {
+        Time.timeScale = 0;
         PlayerDmg.health = PlayerDmg.maxHealth;
     }
 
@@ -32,6 +34,6 @@ public class MenuManager : MonoBehaviour
     public void Play()
     {
         panelStart.SetActive(false);
-        
+        Time.timeScale = 1;
     }
 }

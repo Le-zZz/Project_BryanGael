@@ -20,6 +20,7 @@ public class PlayerDmg : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         health = maxHealth;
         Time.timeScale = 1;
+        panelLose.SetActive(false);
     }
 
     void Update()
